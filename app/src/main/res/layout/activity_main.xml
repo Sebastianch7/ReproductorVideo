@@ -7,10 +7,32 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.edibca.reproductor.MainActivity">
+    tools:context="com.edibca.banco.index">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <VideoView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/reproductor"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onclickcontrolvideo"
+        android:background="@drawable/boton"/>
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="New Button"
+        android:id="@+id/button2"
+        android:onClick="onclickcontrolvideo"
+        android:background="@drawable/boton"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignEnd="@+id/reproductor"
+        android:layout_marginEnd="50dp" />
 </RelativeLayout>
