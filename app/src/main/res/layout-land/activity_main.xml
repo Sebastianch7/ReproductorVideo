@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edibca.banco.index"
+    android:background="#000000">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/reproductor"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnAmpliar"
+        android:background="@drawable/boton"
+        android:focusable="false"
+        android:src="@drawable/ampliar"
+        android:onClick="ampliar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp" />
+
+
+
+</RelativeLayout>

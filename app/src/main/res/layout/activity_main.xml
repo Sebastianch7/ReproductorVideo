@@ -3,36 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.edibca.banco.index">
 
     <VideoView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:id="@+id/reproductor"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        />
 
     <ImageButton
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="onclickcontrolvideo"
-        android:background="@drawable/boton"/>
-    <ImageButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:onClick="onclickcontrolvideo"
+        android:id="@+id/btnAmpliar"
         android:background="@drawable/boton"
-        android:layout_alignTop="@+id/button"
-        android:layout_alignEnd="@+id/reproductor"
-        android:layout_marginEnd="50dp" />
+        android:focusable="false"
+        android:src="@drawable/ampliar"
+        android:onClick="ampliar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp" />
+
+
+
 </RelativeLayout>
